@@ -3,15 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <div class="wall">
+      <div class="intro__phone-picture">
     <header class="page-header">
-      <div class="page-header__wrapper">
-        <a href="page-header__logo">
-          <img src="https://via.placeholder.com/150x150" alt="logo">
+      <!-- <div class="page-header__wrapper"> -->
+        <a href="#" class="page-header__logo">
+          <img src="img/logo-pink-white-mobile.svg" alt="logo">
         </a>
+        <button class="page-header__button" type="button" name="button"><img src="img/icon-menu-cross.svg" alt="close"></button>
         <nav class="page-header__nav">
-          <button type="button" name="button">закрыть</button>
           <ul class="page-header__list">
             <li class="page-header__item page-header__item--clicked"><a href="#" class="page-header__link">Главная</a></li>
             <li class="page-header__item"><a href="#" class="page-header__link">Фотографии</a></li>
@@ -19,23 +24,29 @@
             <li class="page-header__item"><a href="#" class="page-header__link">html academy</a></li>
           </ul>
         </nav>
-      </div>
+      <!-- </div> -->
     </header>
-    <main class="main-page">
-      <section class="intro">
-        <div class="container">
-          <button class="intro__button" type="button" name="button">Скачать приложение</button>
-          <ul class="intro__list">
-            <li class="intro__item"><a href="#" class="intro__link"><img src="https://via.placeholder.com/150x150" alt="app"></a></li>
-            <li class="intro__item"><a href="#" class="intro__link"><img src="https://via.placeholder.com/150x150" alt="app"></a></li>
-            <li class="intro__item"><a href="#" class="intro__link"><img src="https://via.placeholder.com/150x150" alt="app"></a></li>
-          </ul>
-          <p class="intro__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window</p>
+    <section class="intro">
+      <div class="intro__container">
+        <h3 class="intro__title">Взгляните на жизнь иначе!</h3>
+        <div class="intro__app">
+        <button class="intro__button" type="button" name="button">Скачать приложение</button>
+        <ul class="intro__list">
+          <li class="intro__item"><a href="#" class="intro__link intro__link--apple"></a></li>
+          <li class="intro__item"><a href="#" class="intro__link intro__link--android"></a></li>
+          <li class="intro__item"><a href="#" class="intro__link intro__link--microsoft"></a></li>
+        </ul>
+        <p class="intro__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window</p>
         </div>
-      </section>
+      </div>
+    </section>
+    </div>
+  </div>
+    <main class="main-page">
       <section class="information">
         <p class="information__description">Устали от серости мегаполиса?</p>
         <p class="information__description">Нам есть, что вам предложить!</p>
+        <div class="information__container">
         <ul class="information__list">
           <li class="information__item">
             <h3 class="information__title">Поднимает настроение</h3>
@@ -52,10 +63,11 @@
         </ul>
         <div class="information__images">
           <ul class="information__images-list">
-            <li class="information__images-item"><img src="https://via.placeholder.com/150x150" alt="phone" class="information__images-picture"></li>
+            <li class="information__images-item"><img src="img/iphone-screen-3-desktop@1x.png" alt="phone" class="information__images-picture"></li>
             <li class="information__images-item"><img src="https://via.placeholder.com/150x150" alt="phone" class="information__images-picture"></li>
             <li class="information__images-item"><img src="https://via.placeholder.com/150x150" alt="phone" class="information__images-picture"></li>
           </ul>
+        </div>
         </div>
       </section>
       <section class="reivew">
