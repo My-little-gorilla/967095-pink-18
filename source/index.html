@@ -3,39 +3,50 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <div class="wall">
+      <div class="intro__phone-picture">
     <header class="page-header">
-      <div class="page-header__wrapper">
-        <a href="page-header__logo">
-          <img src="https://via.placeholder.com/150x150" alt="logo">
+      <!-- <div class="page-header__wrapper"> -->
+        <a href="#" class="page-header__logo">
+          <img src="img/logo-pink-white-mobile.svg" alt="logo">
         </a>
+        <button class="page-header__button" type="button" name="button"><img src="img/icon-menu-cross.svg" alt="close"></button>
         <nav class="page-header__nav">
-          <button type="button" name="button">закрыть</button>
           <ul class="page-header__list">
             <li class="page-header__item page-header__item--clicked"><a href="#" class="page-header__link">Главная</a></li>
-            <li class="page-header__item"><a href="#" class="page-header__link">Фотографии</a></li>
+            <li class="page-header__item"><a href="photo.html" class="page-header__link">Фотографии</a></li>
             <li class="page-header__item"><a href="#" class="page-header__link">Конкурс</a></li>
             <li class="page-header__item"><a href="#" class="page-header__link">html academy</a></li>
           </ul>
         </nav>
-      </div>
+      <!-- </div> -->
     </header>
-    <main class="main-page">
-      <section class="intro">
-        <div class="container">
-          <button class="intro__button" type="button" name="button">Скачать приложение</button>
-          <ul class="intro__list">
-            <li class="intro__item"><a href="#" class="intro__link"><img src="https://via.placeholder.com/150x150" alt="app"></a></li>
-            <li class="intro__item"><a href="#" class="intro__link"><img src="https://via.placeholder.com/150x150" alt="app"></a></li>
-            <li class="intro__item"><a href="#" class="intro__link"><img src="https://via.placeholder.com/150x150" alt="app"></a></li>
-          </ul>
-          <p class="intro__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window</p>
+    <section class="intro">
+      <div class="intro__container">
+        <h3 class="intro__title">Взгляните на жизнь иначе!</h3>
+        <div class="intro__app">
+        <button class="intro__button" type="button" name="button">Скачать приложение</button>
+        <ul class="intro__list">
+          <li class="intro__item"><a href="#" class="intro__link intro__link--apple"></a></li>
+          <li class="intro__item"><a href="#" class="intro__link intro__link--android"></a></li>
+          <li class="intro__item"><a href="#" class="intro__link intro__link--microsoft"></a></li>
+        </ul>
+        <p class="intro__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window</p>
         </div>
-      </section>
+      </div>
+    </section>
+    </div>
+  </div>
+    <main class="main-page">
       <section class="information">
         <p class="information__description">Устали от серости мегаполиса?</p>
-        <p class="information__description">Нам есть, что вам предложить!</p>
+        <p class="information__description information__description--shorter">Нам есть, что вам предложить!</p>
+        <div class="information__container">
         <ul class="information__list">
           <li class="information__item">
             <h3 class="information__title">Поднимает настроение</h3>
@@ -52,17 +63,32 @@
         </ul>
         <div class="information__images">
           <ul class="information__images-list">
-            <li class="information__images-item"><img src="https://via.placeholder.com/150x150" alt="phone" class="information__images-picture"></li>
-            <li class="information__images-item"><img src="https://via.placeholder.com/150x150" alt="phone" class="information__images-picture"></li>
-            <li class="information__images-item"><img src="https://via.placeholder.com/150x150" alt="phone" class="information__images-picture"></li>
+            <li class="information__images-item"><img src="img/iphone-screen-3-desktop@1x.png" alt="phone" class="information__images-picture"></li>
+            <li class="information__images-item"><img src="img/iphone-screen-3-desktop@1x.png" alt="phone" class="information__images-picture"></li>
+            <li class="information__images-item"><img src="img/iphone-screen-3-desktop@1x.png" alt="phone" class="information__images-picture"></li>
           </ul>
         </div>
+        </div>
+        </div>
+        <div class="diagrama">
+          <div class="diagrama__conteiner">
+          <div class="diagrama__img-conteiner"></div>
+          <div class="diagrama__conteiner-info">
+            <h5 class="diagrama__title">Эффект на 24 часа!</h5>
+            <p class="diagrama__description">Британские ученые провели исследования и доказали,
+что положительный эффект от использования приложения длится целые сутки! </p>
+<a href="#" class="diagrama__link">Узнать больше об исследовании</a>
+          </div>
+</div>
+</div>
       </section>
       <section class="reivew">
+        <div class="review-conteiner">
         <ul class="review__list">
-          <li class="review item">
+          <li class="review__item">
+            <span class="review__addition">25 лет, водитель трамвая</span>
             <h4 class="review__title">Николай Петров</h4>
-            <p class="review__description">«Это приложение перевернуло мой мир и позволило по-новому взгля</p>
+            <p class="review__description">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </li>
         </ul>
         <ul class="review__toggle-list">
@@ -70,10 +96,72 @@
           <li class="review__toggle-item">2</li>
           <li class="review__toggle-item">3</li>
         </ul>
+        </div>
       </section>
-      <section class="price"></section>
+      <section class="price">
+  <div class="price__inner">
+    <ul class="price__list">
+      <li class="price__item price__item--transparent">
+        <ul class="price__detail-list">
+          <li class="price__detail-item price__detail-item--name price__detail-item--transparent">
+            <h5 class="price__title">тариф</h5>
+            <span class="price__worth">цена</span>
+          </li>
+          <li class="price__detail-item"><span class="price__row-name">Розовый фильтр</span></li>
+          <li class="price__detail-item"> <span class="price__row-name">Смайлики</span></li>
+          <li class="price__detail-item"> <span class="price__row-name">Комментарии</span></li>
+        </ul>
+      </li>
+      <li class="price__item">
+      <ul class="price__detail-list">
+        <li class="price__detail-item price__detail-item--name">
+          <h5 class="price__title price__title--first">БAЗА</h5>
+          <span class="price__worth price__worth--first">1,99 USD</span>
+        </li>
+        <li class="price__detail-item price__detail-item--yes"><span class="price__row-name price__row-name--transparent">Розовый фильтр</span></li>
+        <li class="price__detail-item price__detail-item--no"> <span class="price__row-name price__row-name--transparent">Смайлики</span></li>
+        <li class="price__detail-item price__detail-item--no"> <span class="price__row-name price__row-name--transparent">Комментарии</span></li>
+      </ul>
+      </li>
+      <li class="price__item">
+        <ul class="price__detail-list">
+          <li class="price__detail-item price__detail-item--tab price__detail-item--name">
+            <h5 class="price__title">СТАНДАРТ</h5>
+            <span class="price__worth">3,99 USD</span>
+          </li>
+          <li class="price__detail-item price__detail-item--yes"><span class="price__row-name price__row-name--transparent">Розовый фильтр</span></li>
+          <li class="price__detail-item price__detail-item--yes"> <span class="price__row-name price__row-name--transparent">Смайлики</span></li>
+          <li class="price__detail-item price__detail-item--no"> <span class="price__row-name price__row-name--transparent">Комментарии</span></li>
+        </ul>
+      </li>
+      <li class="price__item">
+        <ul class="price__detail-list">
+          <li class="price__detail-item price__detail-item--name">
+            <h5 class="price__title">АНЛИМ</h5>
+            <span class="price__worth">9,99 USD</span>
+          </li>
+          <li class="price__detail-item price__detail-item--yes"> <span class="price__row-name price__row-name--transparent">Розовый фильтр</span></li>
+          <li class="price__detail-item price__detail-item--yes"> <span class="price__row-name price__row-name--transparent">Смайлики</span></li>
+          <li class="price__detail-item price__detail-item--yes"> <span class="price__row-name price__row-name--transparent">Комментарии</span></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <ul class="price__slider-toggle">
+    <li class="price__slider-item"><input class="visually-hidden price__slide-active" id="price-toggle1" type="radio" name="slider-view" value="slider1" checked>
+      <label class="price__slide price__slide--slide1" for="price-toggle1"></label>
+    </li>
+    <li class="price__slider-item"><input class="visually-hidden price__slide-active" id="price-toggle2" type="radio" name="slider-view" value="slider2">
+      <label class="price__slide price__slide--slide2" for="price-toggle2"></label>
+    </li>
+    <li class="price__slider-item"><input class="visually-hidden price__slide-active" id="price-toggle3" type="radio" name="slider-view" value="slider3">
+      <label class="price__slide price__slide--slide3" for="price-toggle3"></label>
+    </li>
+  </ul>
+</section>
       <section class="contacts">
-        <h5 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h5>
+        <div class="contacts__conteiner">
+        <h5 class="contacts__title-name">Остались вопросы? Свяжитесь с нами!</h5>
         <ul class="contacts__list">
           <li class="contacts__item">
             <h6 class="contacts__title">Звоните</h6>
@@ -88,9 +176,22 @@
             <p class="contacts__text">ул. Большая Конюшенная, 19/8 </p>
           </li>
         </ul>
-        <div class="contacts__map"></div>
+        </div>
       </section>
+      <section class="map" id="mapContacts">
+</section>
     </main>
-    <footer class="footer__index"></footer>
+    <footer class="footer footer__index">
+      <div class="footer__conteiner">
+        <a href="#" class="footer__logo"></a>
+        <ul class="footer__list">
+          <li class="footer__item"><a href="" class="footer__link"></a></li>
+          <li class="footer__item"><a href="" class="footer__link"></a></li>
+          <li class="footer__item"><a href="" class="footer__link"></a></li>
+        </ul>
+        <a href="#" class="footer__develop">Разработано</a>
+      </div>
+    </footer>
+    <script src=https://api-maps.yandex.ru/2.1/?lang=ru_RU> </script> <script src="js/map.js"></script>
   </body>
 </html>

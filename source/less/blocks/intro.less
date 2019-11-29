@@ -1,0 +1,157 @@
+.intro {
+  // position: relative;
+}
+
+.intro__title {
+  width: 231px;
+  padding-bottom: 300px;
+  margin: 0 auto;
+  padding-top: 28px;
+  text-align: center;
+  font-family: @font;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+}
+
+.intro__app {
+  background-color: @generalGrey;
+  padding-top: 30px;
+}
+
+.intro__phone-picture {
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center 69%;
+}
+
+.intro__button {
+  display: block;
+  width: 281px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: @font;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: transparent;
+  border: 3px solid #ffffff;
+  border-radius: 30px;
+
+  &:hover {
+    background-color: #ffffff;
+    color: @pink;
+  }
+
+  &:focus {
+    background-color: #ffffff;
+    color: @pink;
+  }
+
+  &:active {
+    background-color: #ffffff;
+  }
+}
+
+.intro__list {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  margin: 0 auto;
+  margin-bottom: 29px;
+  padding: 0;
+  list-style: none;
+}
+
+.intro__link {
+  display: block;
+
+  &--apple {
+    width: 46px;
+    height: 56px;
+    background-image: url("../img/logo-apple.svg");
+  }
+
+  &--android {
+    width: 43px;
+    height: 47px;
+    background-image: url("../img/logo-android.svg");
+  }
+
+  &--microsoft {
+    width: 44px;
+    height: 41px;
+    background-image: url("../img/logo-microsoft.svg");
+  }
+}
+
+.intro__description {
+  width: 240px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+@media (min-width: 700px) {
+  .intro__phone-picture {
+    background-position: center 100%;
+    background-size: 63% 50%;
+  }
+
+  .intro__app {
+    position: static;
+    background-color: transparent;
+  }
+
+  .intro__container {
+    width: 300px;
+    margin-left: 78px;
+  }
+
+  .intro__title {
+    font-size: 40px;
+    margin-top: 103px;
+    padding-bottom: 20px;
+  }
+
+  .intro__button {
+    width: 300px;
+    margin-bottom: 52px;
+  }
+
+  .intro__list {
+    margin-bottom: 44px;
+  }
+
+  .intro__description {
+    width: 309px;
+    padding-bottom: 153px;
+    font-size: 18px;
+    font-weight: lighter;
+  }
+
+  .intro__photo .intro__container {
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .intro__photo .intro__title {
+    padding-top: 153px;
+    padding-bottom: 150px;
+    text-align: center;
+    width: 348px;
+    margin-top: 0;
+    font-size: 50px;
+  }
+  // .intro__photo . {
+  //   width: 348px;
+  // }
+}
