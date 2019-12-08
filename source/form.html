@@ -3,39 +3,113 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <div class="wall">
     <header class="page-header">
-      <div class="page-header__wrapper">
-      <a href="page-header__logo">
-        <img src="dddd" alt="logo">
-      </a>
-      <nav class="page-header__nav">
-        <button type="button" name="button">закрыть</button>
-        <ul class="page-header__list">
-          <li class="page-header__item"><a href="#" class="page-header__link">Главная</a></li>
-          <li class="page-header__item"><a href="#" class="page-header__link">Фотографии</a></li>
-          <li class="page-header__item page-header__item--clicked"><a href="#" class="page-header__link">Конкурс</a></li>
-          <li class="page-header__item"><a href="#" class="page-header__link">html academy</a></li>
-        </ul>
-      </nav>
-  </div>
+      <!-- <div class="page-header__wrapper"> -->
+        <a href="#" class="page-header__logo">
+          <img src="img/logo-pink-white-mobile.svg" alt="logo">
+        </a>
+        <button class="page-header__button" type="button" name="button"><img src="img/icon-menu-cross.svg" alt="close"></button>
+        <nav class="page-header__nav">
+          <ul class="page-header__list">
+            <li class="page-header__item page-header__item--clicked"><a href="index.html" class="page-header__link">Главная</a></li>
+            <li class="page-header__item"><a href="photo.html" class="page-header__link">Фотографии</a></li>
+            <li class="page-header__item"><a href="form.html" class="page-header__link">Конкурс</a></li>
+            <li class="page-header__item"><a href="#" class="page-header__link">html academy</a></li>
+          </ul>
+        </nav>
+      <!-- </div> -->
     </header>
-    <section class="intro">
-      <h3 class="intro__name">Конкурс на самое безбашенное путешествие с Пинк</h3>
-      <p class="intro__text">Поделитесь своей историей и получите шанс выиграть ценный приз </p>
+    <section class="intro intro__photo">
+      <div class="intro__container">
+        <h3 class="intro__title">Конкурс на самое безбашенное путешествие с Пинк</h3>
+
+      </div>
     </section>
+  </div
+    <main class="main">
+    <section class="presentation">
+      <div class="presentation__container">
+        <p class="presentation__description presentation__description--form">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+           <span class="presentation__description-addition">Пожалуйста, заполните форму ниже:</span></p>
+      </div>
+</header>
     <section class="form">
       <form class="form__area" action="https://echo.htmlacademy.ru" method="get">
-        <fieldset class="autor">
-          <input type="text" name="" value="">
-
+        <fieldset class="form__area">
+          <div class="form__conteiner form__conteiner--id">
+            <label class="form__label form__label--pink" for="lastname">Фамилия:</label>
+            <input id="lastname" type="text" class="form__input" placeholder="Укажите фамилию *">
+            <label class="form__label form__label--pink" for="name">Имя:</label>
+            <input id="name" type="text" class="form__input" placeholder="Введите ваше имя *">
+            <label class="form__label form__label--pink" for="fathername">Отчество:</label>
+            <input id="fathername" type="text" class="form__input" placeholder="Ну и отчество тоже">
+          </div>
         </fieldset>
+        <fieldset class="form__area form__area--grey form__area--check">
+          <div class="form__conteiner form__conteiner--checklist">
+            <h4 class="form__title">Ваши безбашенные достижения в путешествии</h4>
+            <input class="form__indicator form__indicator--check visually_hidden" type="checkbox" name="choice" value="check1" id="choice1">
+            <label class="form__label form__label--check form" for="choice1">Сделал селфи с акулой</label>
 
+            <input class="form__indicator form__indicator--check visually_hidden" type="checkbox" name="choice" value="check2" id="choice2">
+            <label class="form__label form__label--check form" for="choice2">Обгорел на пляже</label>
+
+            <input class="form__indicator form__indicator--check visually_hidden" type="checkbox" name="choice" value="check3" id="choice3">
+            <label class="form__label form__label--check form" for="choice3">Видел Чака Норриса</label>
+
+            <input class="form__indicator form__indicator--check visually_hidden" type="checkbox" name="choice" value="check4" id="choice4">
+            <label class="form__label form__label--check form" for="choice4">Накупил сувениров</label>
+
+            <input class="form__indicator form__indicator--check visually_hidden" type="checkbox" name="choice" value="check5" id="choice5">
+            <label class="form__label form__label--check form" for="choice5">Удержал башню</label>
+
+            <input class="form__indicator form__indicator--check visually_hidden" type="checkbox" name="choice" value="check6" id="choice6">
+            <label class="form__label form__label--check form" for="choice6">Разгромил отель</label>
+
+          </div>
+        </fieldset>
+        <fieldset class="form__area form__area--conection">
+          <div class="form__conteiner form__conteiner--conection">
+            <label class="form__label form__label--pink" for="number">Номер телефона</label>
+            <input id="number" type="tel" class="form__input" placeholder="Номер, пожалуйста">
+            <label class="form__label form__label--pink" for="mail">адрес почты</label>
+            <input id="mail" type="text" class="form__input" placeholder="Введите почту *">
+          </div>
+        </fieldset>
+        <fieldset class="form__area form__area--grey form__area--radio">
+          <div class="form__conteiner form__conteiner--radio">
+            <h4 class="form__title">С каким приложением путешествовали?</h4>
+            <input class="form__indicator-radio form__indicator-radio--check visually_hidden" type="radio" name="choice" value="radio1" id="radio-1">
+            <label class="form__label form__label--check form" for="choice-1">Pink для iOS</label>
+
+            <input class="form__indicator-radio form__indicato-radior--check visually_hidden" type="radio" name="choice" value="radio2" id="radio-2">
+            <label class="form__label form__label--check form" for="choice-2">Pink на Android</label>
+
+            <input class="form__indicator-radio form__indicator-radio--check visually_hidden" type="radio" name="choice" value="radio3" id="radio-3">
+            <label class="form__label form__label--check form" for="choice-3">Windows Phone</label>
+
+          </div>
+        </fieldset>
+        <fieldset class="form__area form__area--feedback">
+          <div class="form__conteiner">
+            <h4 class="form__title">Опишите свои эмоции</h4>
+            <textarea class="form__textarea"name="f" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </div>
+        </fieldset>
+        <div class="form__conteiner">
+        <button class="form__button" type="submit" name="button">отправить форму</button>
+        <span class="form__addition">* </span><span class="form__addition--black">— обязательные поля</span>
+        </div>
       </form>
     </section>
-    <footer>
-      <div class="container">
+    <footer class="footer">
+      <div class="footer__conteiner">
         <div class="footer__logo"></div>
         <ul class="footer__list">
           <li class="footer__item"><a href="#" class="footer__link"></a></li>
