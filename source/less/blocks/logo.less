@@ -1,0 +1,42 @@
+.logo {
+  display: none;
+
+  &--mob {
+    fill: #ffffff;
+    display: flex;
+    width: 74px;
+    height: 23px;
+
+    &:hover {
+      fill: @pink;
+    }
+  }
+}
+
+@media (min-width: 660px) {
+  .logo {
+    &--mob {
+      display: none;
+    }
+
+    &--tab {
+      display: block;
+      width: 147px;
+      height: 40px;
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .logo {
+    &--tab {
+      display: none;
+    }
+
+    &--desk {
+      display: block;
+      width: 147px;
+      height: 40px;
+    }
+  }
+}

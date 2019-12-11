@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/opensanslight.woff" as="font" type="font/woff">
+  <link rel="preload" href="fontsopensans.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/opensans.woff" as="font" type="font/woff">
+  <link rel="preload" href="fontsopensansbold.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/opensansbold.woff" as="font" type="font/woff">
+  <link rel="stylesheet" href="css/style.min.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>HTML Academy: Пинк</title>
+</head>
   <body>
+    <include src="build/img/sprite.svg"></include>
     <div class="wall">
     <header class="page-header">
       <!-- <div class="page-header__wrapper"> -->
@@ -33,110 +40,132 @@
       </div>
     </section>
   </div
-    <main>
+    <main class="main">
     <section class="presentation">
       <div class="presentation__container">
         <p class="presentation__description">Взгляните на фотографии, которые выкладывают пользователи!
 Видите, как не хватает ваших?</p>
       </div>
-
+</header>
     </section>
     <!-- li.user-photo__item*7>img.user-photo__img+.user-photo__wrapper>h5.user-photo__title+p.user-photo__description+span.user-photo__like-img+span.user-photo__likes -->
     <section class="user-photo">
       <div class="user-photo__container">
         <ul class="user-photo__list">
-          <li class="user-photo__item user-photo__item--panorama">
-            <a class="user-photo__link" href="#">
-            <img src="img/panorama-mobile@1x.jpg" alt="panorama" class="user-photo__img">
-            </a>
-            <div class="user-photo__wrapper  user-photo__wrapper--panorama">
-              <h5 class="user-photo__title">Анна</h5>
-              <span class="user-photo__time">(5 минут назад)</span>
-              <p class="user-photo__description">
-Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-              <span class="user-photo__like-img">1</span>
-              <span class="user-photo__likes">Нравится: 215</span>
-            </div>
+          <li class="user-photo__item-conteiner">
+            <ul class="user-photo__sublist user-photo__sublist--panorama">
+              <li class="user-photo__item user-photo__item--panorama">
+                <a class="user-photo__link" href="#">
+                <img src="img/panorama-mobile@1x.jpg" alt="panorama" class="user-photo__img">
+                </a>
+                <div class="user-photo__wrapper  user-photo__wrapper--panorama">
+                  <h5 class="user-photo__title">Анна</h5>
+                  <span class="user-photo__time">(5 минут назад)</span>
+                  <p class="user-photo__description">
+    Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                  <span class="user-photo__like-img user-photo__like-img--panorama">1</span>
+                  <span class="user-photo__likes">Нравится: 215</span>
+                </div>
+              </li>
+            </ul>
           </li>
-          <li class="user-photo__item">
-            <a class="user-photo__link" href="#">
-            <img src="img/photo-car-mobile@1x.jpg" alt="photo2" class="user-photo__img">
-          </a>
-            <div class="user-photo__wrapper">
-              <h5 class="user-photo__title">Левон</h5>
-              <span class="user-photo__time">(5 часов назад)</span>
-              <p class="user-photo__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-              <span class="user-photo__like-img">2</span>
-              <span class="user-photo__likes">Нравится: 356</span>
-            </div>
-          </li>
-          <li class="user-photo__item">
-            <a class="user-photo__link" href="#">
-            <img src="img/photo-drumset-mobile@1x.jpg" alt="photo3" class="user-photo__img">
-            </a>
-            <div class="user-photo__wrapper">
-              <h5 class="user-photo__title">Антон</h5>
-              <span class="user-photo__time">(12 часов назад)</span>
-              <p class="user-photo__description">Соседи будут рады!</p>
-              <span class="user-photo__like-img">3</span>
-              <span class="user-photo__likes">Нравится: 666</span>
-              </div>
-          </li>
-          <li class="user-photo__item">
-            <a class="user-photo__link" href="#">
-            <img src="img\photo-window-mobile@1x.jpg" alt="photo3" class="user-photo__img">
-            </a>
-            <div class="user-photo__wrapper">
-              <h5 class="user-photo__title">Борис</h5>
-              <span class="user-photo__time">(20 часов назад)</span>
-              <p class="user-photo__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
-              <span class="user-photo__like-img">4</span>
-              <span class="user-photo__likes">Нравится: 215</span>
-            </div>
-          </li>
-          <li class="user-photo__item">
-            <a class="user-photo__link" href="#">
-            <img src="img\photo-fair-mobile@1x.jpg" alt="photo5" class="user-photo__img">
-            </a>
-            <div class="user-photo__wrapper">
-              <h5 class="user-photo__title">Сергей</h5>
-              <span class="user-photo__time">(25 часов назад)</span>
-              <p class="user-photo__description">Самая кубанская в мире!</p>
-              <span class="user-photo__like-img">5</span>
-              <span class="user-photo__likes">Нравится: 4</span>
-            </div>
-          </li>
-          <li class="user-photo__item">
-            <a class="user-photo__link" href="#">
-            <img src="img/photo-pov-mobile@1x.jpg" alt="photo6" class="user-photo__img">
-            </a>
-            <div class="user-photo__wrapper">
-              <h5 class="user-photo__title">Максим</h5>
-              <span class="user-photo__time">(40 часов назад)</span>
-              <p class="user-photo__description">Где снег-то?</p>
-              <span class="user-photo__like-img">6</span>
-              <span class="user-photo__likes">Нравится: 150</span>
-            </div>
-          </li>
-          <li class="user-photo__item">
-            <a class="user-photo__link" href="#">
-            <img src="img\photo-wing-mobile@1x.jpg" alt="photo7" class="user-photo__img">
-            </a>
-            <div class="user-photo__wrapper">
-              <h5 class="user-photo__title">Надежда</h5>
-              <span class="user-photo__time">(45 часов назад)</span>
-              <p class="user-photo__description">Всем GM и взаимные лайки!</p>
-              <span class="user-photo__like-img">7</span>
-              <span class="user-photo__likes">Нравится: 2560</span>
-            </div>
+          <li class="user-photo__item-conteiner">
+            <ul class="user-photo__sublist">
+              <li class="user-photo__item">
+                <div class="user-photo__item-conteiner">
+                <a class="user-photo__link" href="#">
+                <img src="img/photo-car-mobile@1x.jpg" alt="photo2" class="user-photo__img">
+              </a>
+                <div class="user-photo__wrapper">
+                  <h5 class="user-photo__title">Левон</h5>
+                  <span class="user-photo__time">(5 часов назад)</span>
+                  <p class="user-photo__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                  <span class="user-photo__like-img">2</span>
+                  <span class="user-photo__likes">Нравится: 356</span>
+                </div>
+                </div>
+              </li>
+              <li class="user-photo__item">
+                <div class="user-photo__item-conteiner">
+                <a class="user-photo__link" href="#">
+                <img src="img/photo-drumset-mobile@1x.jpg" alt="photo3" class="user-photo__img">
+                </a>
+                <div class="user-photo__wrapper">
+                  <h5 class="user-photo__title">Антон</h5>
+                  <span class="user-photo__time">(12 часов назад)</span>
+                  <p class="user-photo__description">Соседи будут рады!</p>
+                  <span class="user-photo__like-img">3</span>
+                  <span class="user-photo__likes">Нравится: 666</span>
+                  </div>
+                  </div>
+              </li>
+              <li class="user-photo__item">
+                <div class="user-photo__item-conteiner">
+                <a class="user-photo__link" href="#">
+                <img src="img\photo-window-mobile@1x.jpg" alt="photo3" class="user-photo__img">
+                </a>
+                <div class="user-photo__wrapper">
+                  <h5 class="user-photo__title">Борис</h5>
+                  <span class="user-photo__time">(20 часов назад)</span>
+                  <p class="user-photo__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                  <span class="user-photo__like-img">4</span>
+                  <span class="user-photo__likes">Нравится: 215</span>
+                </div>
+                </div>
+              </li>
+              <li class="user-photo__item">
+                <div class="user-photo__item-conteiner">
+                <a class="user-photo__link" href="#">
+                <img src="img\photo-fair-mobile@1x.jpg" alt="photo5" class="user-photo__img">
+                </a>
+                <div class="user-photo__wrapper">
+                  <h5 class="user-photo__title">Сергей</h5>
+                  <span class="user-photo__time">(25 часов назад)</span>
+                  <p class="user-photo__description">Самая кубанская в мире!</p>
+                  <span class="user-photo__like-img">5</span>
+                  <span class="user-photo__likes">Нравится: 4</span>
+                </div>
+                </div>
+              </li>
+              <li class="user-photo__item">
+                <div class="user-photo__item-conteiner">
+                <a class="user-photo__link" href="#">
+                <img src="img/photo-pov-mobile@1x.jpg" alt="photo6" class="user-photo__img">
+                </a>
+                <div class="user-photo__wrapper">
+                  <h5 class="user-photo__title">Максим</h5>
+                  <span class="user-photo__time">(40 часов назад)</span>
+                  <p class="user-photo__description">Где снег-то?</p>
+                  <span class="user-photo__like-img">6</span>
+                  <span class="user-photo__likes">Нравится: 150</span>
+                </div>
+                </div>
+              </li>
+              <li class="user-photo__item">
+                <div class="user-photo__item-conteiner">
+                <a class="user-photo__link" href="#">
+                <img src="img\photo-wing-mobile@1x.jpg" alt="photo7" class="user-photo__img">
+                </a>
+                <div class="user-photo__wrapper">
+                  <h5 class="user-photo__title">Надежда</h5>
+                  <span class="user-photo__time">(45 часов назад)</span>
+                  <p class="user-photo__description">Всем GM и взаимные лайки!</p>
+                  <span class="user-photo__like-img">7</span>
+                  <span class="user-photo__likes">Нравится: 2560</span>
+                </div>
+                </div>
+              </li>
+
+            </ul>
           </li>
         </ul>
+
       </div>
     </section>
     <section class="presentation">
       <div class="presentation__container">
-        <p class="presentation__description">Затмите их всех!
-Выкладывайте все, что накопилось в телефоне!</p>
+        <p class="presentation__description">Затмите их всех!<span class="presentation__description-break">
+Выкладывайте все, что накопилось в телефоне!</span></p>
       </div>
     </section>
     <section class="edit">
