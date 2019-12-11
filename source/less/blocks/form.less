@@ -5,39 +5,50 @@
   padding: 0;
   padding-top: 41px;
   border: 0;
+
   &--grey {
     background-color: @light-grey;
     text-align: center;
   }
+
   &:first-child {
     padding-top: 0;
   }
 }
+
 .form__conteiner {
   padding-left: 22px;
   padding-right: 22px;
   padding-bottom: 44px;
+
   &--id {
     display: flex;
     flex-direction: column;
   }
-  &--checklist, &--conection, &--radio {
+
+  &--checklist,
+  &--conection,
+  &--radio {
     display: flex;
     flex-direction: column;
   }
 }
+
 .form__label {
   position: relative;
   font-size: 14px;
   font-weight: normal;
   text-transform: uppercase;
+
   &--pink {
     margin-bottom: 14px;
     margin-top: 29px;
     padding-left: 21px;
     color: @pink;
   }
-  &--check, &--radio {
+
+  &--check,
+  &--radio {
     display: flex;
     align-items: flex-start;
     padding-left: 80px;
@@ -56,15 +67,16 @@
     border: 2px solid #e5e5e5;
   }
 }
+
 .form__indicator:checked + label {
   &::before {
     background-color: rgb(223, 186, 252);
   }
 }
+
 .form__indicator-radio + label {
   position: relative;
-}
-.form__indicator-radio + label {
+
   &::before {
     position: absolute;
     content: "";
@@ -76,9 +88,10 @@
     border-radius: 50%;
   }
 }
+
 .form__indicator-radio:checked + label {
   &::before {
-      background-color: @pink;
+    background-color: @pink;
   }
 }
 
@@ -86,31 +99,39 @@
   display: flex;
   flex-direction: column;
 }
+
 .form__input {
   height: 59px;
   border: solid 2px #e5e5e5;
+
   &[placeholder] {
     font-size: 19px;
     color: black;
   }
 }
-.form__input[type=text], .form__input[type=tel] {
+
+.form__input[type="text"],
+.form__input[type="tel"] {
   padding-left: 22px;
 }
+
 .form__title {
   color: @pink;
   text-transform: uppercase;
   font-weight: normal;
   font-size: 14px;
+
   &--label {
     padding-left: 22px;
     padding-bottom: 12px;
     padding-top: 28px;
+
     &:first-child {
       padding-top: 0;
     }
   }
 }
+
 .form__textarea {
   width: 100%;
   height: 197px;
@@ -128,16 +149,19 @@
   text-transform: uppercase;
   font-size: 18px;
 }
+
 @media (min-width: 660px) {
   .form__area {
     &--check {
       order: 3;
     }
+
     &--conection {
       order: 2;
     }
+
     &--radio {
-      order: 1
+      order: 1;
     }
   }
 }
@@ -147,9 +171,11 @@
     &--check {
       order: 4;
     }
+
     &--conection {
       order: 2;
     }
+
     &--radio {
       order: 1;
     }
